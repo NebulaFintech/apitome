@@ -1,6 +1,6 @@
 require 'open-uri'
 
-class Apitome::DocsController < < Object.const_get(Apitome.configuration.parent_controller)
+class Apitome::DocsController < Object.const_get(Apitome.configuration.parent_controller)
   layout Apitome.configuration.layout
 
   helper_method *[
