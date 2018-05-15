@@ -4,6 +4,7 @@ module Apitome
       :mount_at,
       :root,
       :doc_path,
+      :parent_controller,
       :title,
       :layout,
       :code_theme,
@@ -19,6 +20,7 @@ module Apitome
     @@mount_at     = "/api/docs"
     @@root         = nil # will default to Rails.root if left unset
     @@doc_path     = { default: "doc/api" }
+    @@parent_controller = "ActionController::Base"
     @@title        = "Apitome Documentation"
     @@layout       = "apitome/application"
     @@code_theme   = "default"
